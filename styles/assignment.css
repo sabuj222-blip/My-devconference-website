@@ -52,7 +52,7 @@
   padding: 4px 16px;
  }
 .hero{
-    background-image:url("/banner.jpg");
+    background-image:url("../banner.jpg");
     
     min-height: 100vh;
     background-size: cover;
