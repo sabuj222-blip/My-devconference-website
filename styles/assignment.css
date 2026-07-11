@@ -234,3 +234,23 @@ border-radius: 5px;
 .sponsor-card p{
     color:gray;
 }
+footer{
+ background-color: #0D1B2A;
+height: 100px;
+align-items: center;
+padding-top: 20px;
+}
+.footer-design{
+     
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 100px;
+    font-size: 16px;
+    color: gray;
+   
+}
+.service{
+    list-style: none;
+     display: flex;
+     gap: 20px;
+}
