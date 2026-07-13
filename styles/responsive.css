@@ -6,7 +6,6 @@
  header{
     background-color: rgb(245, 247, 248);
  }
- 
  nav{
     display: flex;
     justify-content: space-between;
@@ -16,33 +15,21 @@
      align-items: center;
      cursor: pointer;
  }
+.tab{
+    align-items: center;
+    list-style: none;
+    margin: 0 auto; 
+}
+  ul li a{
+    color: rgb(118, 114, 114);
+    text-decoration: none;
+
+ }
  nav ul{
     display: flex;
     padding: 12PX 0px;
     font-size: 15px;
- }
-  nav ul li a{
-   color: rgb(118, 114, 114);
-  
-}
- 
- .logo{
-    display:flex;
-    align-items: center;
-    font-size: 15px;
-   width: 50px;
- }
-
- .tab {
     gap: 20px;
-    align-items: center;
-    list-style: none;
-    margin: 0 auto;         
-}
- ul li a{
-  text-decoration: none;
- 
- 
  }
  .button-style{
   background: #2606dc;
@@ -52,16 +39,11 @@
   padding: 4px 16px;
   width: 200px;
    cursor: pointer;
+   height: 40px;
+   transition: 0.3s;
+ }
  
- 
- }
- .btn-size{
-    height: 50px;
- }
- .btn-size-height{
-  height: 40px;
- }
-.hero{
+ .hero{
     background-image:url("../banner.jpg");
     
     min-height: 100vh;
@@ -85,10 +67,7 @@ p{
 
 }
 .second{
-    margin-top: 150px;
-   border: 2px;
-   border-width:500px;
-  
+    margin-bottom:50px;
 }
 .gallery{
   max-width: 1100px;
@@ -97,28 +76,29 @@ p{
     
     
 }
+.gallery-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    transition: 0.3s;
+}
 .sec-2{
     text-align: center;
     font-size: 56px;
     font-weight: bold;
 }
-.gallery-box{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-
 .div-size{
-  flex: 1;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+box-shadow:0 5px 15px rgba(0,0,0,.15);
   border: 1px solid rgb(203, 200, 200);
   border-radius: 10px;
+  display: grid;
+ 
 }
 .div-size img{
     width:100%;
     display:block;
-    border-radius: 10px;
+   border-radius: 10px;
 }
 .developer{
     font-size: 12px;
@@ -152,19 +132,22 @@ color: rgb(108, 104, 104);
 }
 .sec-3-div{
     display:flex;
-    margin:50px auto;
+    justify-content: center;
     padding:20px 20px;
     gap:30px;
-    max-width: 1100px;
-
+     width: 100%;
+  
+     
 }
 .div-box1{
 border: 1px solid rgb(163, 161, 161);
  box-shadow:0 5px 15px rgba(0,0,0,.15);-
 background-color: #E5E7EB;
 border-radius: 5px;
-width: 90%;
-
+transition: 0.3s;
+}
+.div-box1:hover{
+    transform:translate(-10px);
 }
 .font{
     font-size:13px;
@@ -191,6 +174,13 @@ width: 180px;
 height: 40px;
 border-radius: 5px;
 cursor: pointer;
+transition: 0.3s;
+}
+.button-style:hover{
+transform: translateY(-10px);
+}
+.button-align:hover{
+    background-color:green ;
 }
 .border-1{
     border-color: #2606dc;
@@ -248,7 +238,7 @@ cursor: pointer;
     color:gray;
 }
 footer{
-    background:#eaeded;
+    background:#94a4dc;
     color:white;
     padding:40px 100px;
 }
@@ -303,164 +293,11 @@ hr{
 
 .footer-menu a{
     text-decoration:none;
-    color:#6262e1;
+    color:#03038a;
     transition:0.3s;
 }
 
 .footer-menu a:hover{
     color:rgb(116, 127, 226);
 }
-/* ===========================
-   Tablet (992px)
-=========================== */
 
-@media (max-width:992px){
-
-    .gallery-box{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .sponsor-container{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .sec-3-div{
-        flex-wrap:wrap;
-    }
-
-}
-
-
-/* ===========================
-   Mobile (768px)
-=========================== */
-
-@media (max-width:768px){
-
-    /* Navbar */
-
-    nav{
-    flex-direction:column;
-    align-items:center;
-    gap:15px;
-    padding:15px;
-}
-.logo img{
-    width:90px;
-}
-    
-.tab{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:10px;
-}
-nav ul{
-    padding:0;
-}
-nav .button-style{
-    width:180px;
-    height:40px;
-}
-
-.hero{
-    min-height:70vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
-}
-    .button-style{
-        width:100%;
-    }
-
-    /* Hero */
-
-    h1{
-        font-size:42px;
-    }
-
-    p{
-        font-size:18px;
-    }
-
-   .sec-text{
-    max-width:100%;
-    margin:auto;
-    padding:120px 20px;
-    text-align:center;
-    color:white;
-}
-.hero h1{
-    font-size:42px;
-    line-height:1.2;
-}
-.hero p{
-    font-size:18px;
-    line-height:1.6;
-    margin-top:20px;
-}
-
-
-    .second{
-    margin-top:40px;
-    width:180px;
-}
-    /* Gallery */
-
-    .sec-2{
-        font-size:36px;
-    }
-
-    .gallery-box{
-        grid-template-columns:1fr;
-    }
-
-    /* Pricing */
-
-    .headline{
-        font-size:34px;
-    }
-
-    .sec-3-div{
-        flex-direction:column;
-        margin:40px auto;
-    }
-
-    .div-box1{
-        width:auto;
-    }
-
-    /* Sponsors */
-
-    .section-title{
-        font-size:34px;
-    }
-
-    .sponsor-container{
-        grid-template-columns:1fr;
-    }
-
-    /* Footer */
-
-    footer{
-        padding:30px 20px;
-    }
-
-    .footer-top{
-        flex-direction:column;
-        gap:20px;
-    }
-
-    .footer-bottom{
-        flex-direction:column;
-        gap:20px;
-        text-align:center;
-    }
-
-    .footer-menu{
-        flex-direction:column;
-        gap:10px;
-    }
-
-}
